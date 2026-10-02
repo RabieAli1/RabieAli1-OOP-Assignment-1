@@ -21,7 +21,7 @@ public class Program
         RunInteractiveMenu(store);
     }
 
-    // ===== Seed + Demo =====
+    // Seed + Demo
     static void SeedSampleData(Store store)
     {
         store.AddCustomer(new Customer(1, "Mona Ali", "mona@example.com", "Cairo", true));
@@ -50,7 +50,7 @@ public class Program
         store.MarkOrderPaid(1003);
     }
 
-    // ===== Printing =====
+    //Printing
     static void PrintCustomers(Store store)
     {
         Console.WriteLine($"\n=== CUSTOMERS ({store.Customers.Count}) ===");
@@ -88,7 +88,7 @@ public class Program
             PrintOrder(o);
     }
 
-    // ===== Menu =====
+    // Menu 
     static void PrintMenu()
     {
         Console.WriteLine("\n---------- MENU ----------");
